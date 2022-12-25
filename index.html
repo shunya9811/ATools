@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>File Directory System</title>
+
+</head>
+<body>
+    <div class="bg-primary vh-100 d-flex flex-column justify-content-center ">
+        <div class="container col-8 px-0 bg-result">
+            <div class="bg-info text-center bg-header py-2">
+                <h1>Open Library Book Search</h1>
+                <h6> (Queries can take a couple seconds) </h6>
+                <h6>入力フォーマット: <br> 
+                    "ATools search title=[title]"<br>
+                    "ATools search author=[person]"<br>
+                    "ATools isbn-lookup [isbn_number]"
+                </h6>
+            </div>
+    
+            <div id="shell" class="container vh-60 bg-dark p-3 text-white">
+            </div>
+    
+    
+            <div class="container input-group py-2">
+                <input type="text" id ="shellInput" class="form-control" placeholder="type any command" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+        </div>
+    </div>
+
+    <script src="./ATools.js"></script>
+</body>
+</html>
